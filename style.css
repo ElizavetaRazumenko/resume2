@@ -134,12 +134,13 @@ a:hover {
     .main_info {
     right: 30px;
     width: 450px;
-    height: 250px;
+    height: max-content;
     }
     .my_photo {
         border-radius: 50%;
         width: 140px;
         height: 140px;
+        margin-top: 20px;
     }
     .my_contacts {
     left: 15px;
