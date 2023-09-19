@@ -130,6 +130,98 @@ a:hover {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1050px) {
+    .main_info {
+    right: 30px;
+    width: 450px;
+    height: 250px;
+    }
+    .my_photo {
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+    }
+    .my_contacts {
+    left: 15px;
+    padding: 10px 10px;
+    }
+
+    a {
+        margin-bottom: 3px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .mail-icon {
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+    }
+
+    .my_name {
+        font-size: 1.4rem;
+    }
+    .my_title {
+        font-size: .9rem;
+    }
+
+  }
+  @media screen and (max-width: 610px) {
+    .my_info_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .my_photo {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .my_contacts {
+        position: static;
+    }
+    .main_info {
+    right: 10px;
+    width: 330px;
+    height: max-content;
+    padding-left: 20px;
+    }
+    .my_photo {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+    }
+    .my_contacts {
+    left: 10px;
+    padding: 10px 10px;
+    }
+
+    a {
+        margin-bottom: 3px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .mail-icon {
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+    }
+
+    .my_name {
+        font-size: 1rem;
+    }
+    .my_title {
+        font-size: .8rem;
+    }
+
+  }
+
 .section {
     box-sizing: border-box;
     width: 1080px;
@@ -144,8 +236,8 @@ h2 {
 
 .skills_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .skill {
@@ -155,7 +247,7 @@ h2 {
 
 .education {
     margin: 0;
-    font-size: 1.2rem;
+    margin-left: 30px;
 }
 
 .university {
@@ -180,3 +272,81 @@ h2 {
 .about-me_wrapper  {
     padding-bottom: 25px;
 }
+
+.about_me {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .section {
+        width: 850px;
+    }
+    .english_wrapper {
+        margin-right: 50px;
+    }
+    
+    .courses_wrapper {
+        margin-right: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 1050px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .section {
+        width: 490px;
+        padding: 0 20px;
+    }
+
+    .english_wrapper {
+        margin-right: 00px;
+    }
+
+    .skill {
+    font-size: 1rem;
+    padding-bottom: 0px;
+    }
+
+    .about-me_wrapper {
+        padding-bottom: 20px;
+    }
+
+  }
+
+  
+  @media screen and (max-width: 610px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    .skills_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .section {
+        width: 340px;
+        padding: 0 10px;
+    }
+
+    .english_wrapper {
+        margin-right: 00px;
+    }
+
+    .skill {
+    font-size: .8rem;
+    padding-bottom: 0px;
+    }
+
+    .education_wrapper, 
+    .courses_wrapper {
+        flex-direction: column;
+    }
+
+    .about-me_wrapper {
+        padding-bottom: 20px;
+    }
+
+  }
